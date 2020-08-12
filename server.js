@@ -7,6 +7,10 @@ var schema = buildSchema(`
   type Query {
     hello: String
   }
+  type Shrey {
+    name: String,
+    age: Number
+  }
 `);
 
 var root = { hello: () => 'Hello world!' };
